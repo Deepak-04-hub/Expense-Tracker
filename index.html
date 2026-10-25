@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class ="dashboard">
+        <div class="container">
+            <h1>Student Expense Tracker</h1>
+
+            <form id="expense-form">
+                <input type="text" id="desc" placeholder="Kaha Kharch hua re Paisa ?" required>
+                <input type="number" id="amount" placeholder="Kitna Udaya ?" required>
+                <button type="submit">Add Expense</button>
+            </form>
+
+            <h3>Total: ₹ <span id="total">0</span></h3>
+        
+            <ul id="expense-list"></ul>
+        </div>
+        
+        <div class="chart-container">
+            <canvas id="expenseChart"></canvas>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
